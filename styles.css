@@ -1,0 +1,24 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Lemonada', serif;
+  font-size: 56px;
+  letter-spacing: 0.02em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.capital-letter {
+  font-size: 72px;
+}
+
+.lower-header {
+  display: block;
+  line-height: 0.1;
+  margin: 0 auto;
+  padding-left: 80px;
+}
