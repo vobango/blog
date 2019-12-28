@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Switching context | Pensive Panini</title>
+    <meta
+      name="description"
+      content="Have you ever had days where you had to juggle between multiple projects? No? Well, lucky you
+      I guess but most developers probably know what I'm talking about."
+    />
+    <meta name="author" content="Kaspar Arme" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster|Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: #fdfbff;
+        color: #333;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      .header {
+        background-color: #e8ddf7;
+        background-image: url("data:image/svg+xml,%3Csvg width='70' height='70' viewBox='0 0 70 70' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23af7dff' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 0h35v35H0V0zm5 5h25v25H5V5zm5 5h15v15H10V10zm5 5h5v5h-5v-5zM40 5h25v25H40V5zm5 5h15v15H45V10zm5 5h5v5h-5v-5zM70 35H35v35h35V35zm-5 5H40v25h25V40zm-5 5H45v15h15V45zm-5 5h-5v5h5v-5zM30 40H5v25h25V40zm-5 5H10v15h15V45zm-5 5h-5v5h5v-5z'/%3E%3C/g%3E%3C/svg%3E");
+        padding: 60px 0 70px 0;
+        text-align: center;
+      }
+
+      .rotated {
+        display: inline-block;
+        transform: rotate(10deg);
+        transform-origin: center left;
+      }
+
+      h1 {
+        font-family: 'Lobster', sans-serif;
+        font-size: 56px;
+        font-weight: normal;
+        margin: 0;
+        text-shadow: 2px 4px 0 #af7dcc;
+      }
+
+      h2 {
+        margin-top: 80px;
+      }
+
+      p,
+      ul {
+        line-height: 1.9;
+      }
+
+      .content {
+        max-width: 640px;
+        margin: 0 auto 100px;
+      }
+
+      .highlight {
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-name: shadowglow;
+        font-weight: normal;
+        letter-spacing: 0.32em;
+        text-transform: uppercase;
+      }
+
+      @keyframes shadowglow {
+        0% {
+          text-shadow: 0 0 8px #af7dcc;
+        }
+
+        50% {
+          text-shadow: 0 0 0 #af7dcc;
+        }
+
+        100% {
+          text-shadow: 0 0 8px #af7dcc;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Switching context while keeping your <span class="rotated">sanity</span></h1>
+    </div>
+
+    <div class="content">
+      <h2>What is context switching anyway?</h2>
+      <p>
+        Have you ever had days where you had to juggle between multiple projects? No? Well, lucky
+        you I guess but most developers probably know what I'm talking about. If you haven't been in
+        this kind of situation here's what I mean - you're working on project A and then client B
+        calls and says there's something that needs fixing/improving urgently. You put project A on
+        hold and start working on project B. Just as you're finishing up the fixes for project B a
+        pull request comes in and you think "Well, I was done with this project anyway, might as
+        well take a look before going back to A." But turns out there are tons of changes in the PR
+        so you take an hour to go through all of them. After that's done you can go back to working
+        on project A but only for an awkward 45 minutes because a meeting is coming up. Even though
+        that was only a couple of context switches it can easily feel like you went back and forth
+        between things all the time (and yet got nothing significant done!). If this is a one-of
+        kind of a workday then yeah it sucks but if you have to work like this for continuously for
+        a longer period of time the it can easily lead to burnout or worse. So what can you do to
+        avoid going insane?
+      </p>
+
+      <h2>Avoid context switching</h2>
+      <p>
+        A solid way to avoid mental fatigue from context switching is to not contstantly switch
+        contexts (wow, thanks Einstein!) but how do you do that? Here are a couple of practical tips
+        and tricks:
+      </p>
+      <ul>
+        <li>
+          Turn off all notifications and only check them at a fixed time every day (e.g at the start
+          of your workday, after lunch and before finishing up fo the day). This includes Slack,
+          Skype, e-mail and phone notifications. On one hand this gives you large chunks of
+          uninterrupted work time and on the other hand if anyone needs you to work on something
+          urgent you can get to that in a timely manner.
+        </li>
+        <li>
+          Postpone "urgent" things. By this I mean sometimes a client or a coworker comes to you
+          with a task they claim is absolutlely critical and needs to be done ASAP. If you find
+          yourself in this kind of a situation then be extremely sceptical of the urgency of the
+          task and see if it can be postponed until your regular "context switching time" (after
+          lunch etc) or if it's a longer task then maybe even until the next day. Bonus: use this
+          tactic for pull requests also.
+        </li>
+        <li>
+          If you have to work on multiple projects concurrently and there's no rush with any of them
+          then work on a single project on any given day and switch projects daily.
+        </li>
+      </ul>
+
+      <h2>When context switching is unavoidable</h2>
+      <p>
+        Sometimes the tricks above don't work and you really have to switch between multiple things
+        a day OR when you feel mental fatigue even after avoiding switching as much as possible.
+        Then what?
+      </p>
+      <h3 class="highlight">Meditate</h3>
+      <p>
+        Uuuhh...what? Ok, hear me out. If you've been to a perfume shop you might've seen a jar of
+        coffee beans next to the perfumes. It's there so you can smell the beans between trying
+        different perfumes to "reset" your sense of smell (or as they say, cleanse your palette).
+        Meditating between projects has the same effect but for your brain. But how does it work?
+        Similarily to the smell of coffee being almost a complete opposite of a regular perfume (and
+        thus providing massive contrast between smells), meditating is the polar opposite of working
+        on a (software) project and thus gives your monkey brain<sup>[1]</sup> time to "cleanse". At
+        this point you may be asking what kind of medidation am I thinking of and for how long? I
+        suggest practicing the easiest meditation there is - concentrate on your breathing. Just be
+        aware of your breathing and if your mind starts wandering around then try to notice it and
+        re-focus on the breathing. As for the duration it's up to you but I suggest starting at 10
+        minutes. This might seem like a while and a pretty significant amount of time if you
+        meditate between every project but this has a couple of benefits:
+      </p>
+      <ul>
+        <li>
+          Your mind is refreshed and clearer when starting work on the new project which might mean
+          you can complete the task quicker than you would've completed it without meditating so
+          there's less or no loss in time altogether.
+        </li>
+        <li>
+          Even if meditating decreases the time you have every day to work on projects it can
+          definately enable frequent context switching for longer periods of time.
+        </li>
+      </ul>
+      <p>
+        If meditating is <em>really</em> not your thing then a great alternative is going for a
+        short walk or a bicycle ride or doing a short workout. Notice how all of these activities
+        are physical (or at least kind of physical in the case of meditation as you're not moving
+        much but still concentrating on a physical thing - breathing). This is intentional as it
+        creates the necessary contrast between projects which are all mental work. That's why it's
+        not a good idea to try to refresh your brain between projects by browsing the internet or
+        playing video games. You're still engaging in a mental activity and thus exhausting your
+        mental resources.
+      </p>
+    </div>
+  </body>
+</html>
